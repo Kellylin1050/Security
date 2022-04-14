@@ -28,7 +28,7 @@ public class Des {
 
     }
 
-    /**
+    /*
      * 加密
      * @param datasource byte[]
      * @param password String
@@ -48,7 +48,7 @@ public class Des {
         }
         return null;
     }
-    /**
+    /*
      * 解密
      * @param src byte[]
      * @param password String
