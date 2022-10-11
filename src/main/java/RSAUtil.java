@@ -11,10 +11,10 @@ import java.util.Base64;
 
 public class RSAUtil {
     public static KeyPair getKeyPair() throws NoSuchAlgorithmException, UnsupportedEncodingException {
-        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");    // 獲得RSA金鑰對的生成器例項
-        SecureRandom secureRandom = new SecureRandom(String.valueOf(System.currentTimeMillis()).getBytes("utf-8")); // 說的一個安全的隨機數
-        keyPairGenerator.initialize(2048, secureRandom);    // 這裡可以是1024、2048 初始化一個金鑰對
-        KeyPair keyPair = keyPairGenerator.generateKeyPair();   // 獲得金鑰對
+        KeyPairGenerator keyPairGenerator = KeyPairGenerator.getInstance("RSA");
+        SecureRandom secureRandom = new SecureRandom(String.valueOf(System.currentTimeMillis()).getBytes("utf-8"));
+        keyPairGenerator.initialize(2048, secureRandom);
+        KeyPair keyPair = keyPairGenerator.generateKeyPair();
         return keyPair;
     }
 
